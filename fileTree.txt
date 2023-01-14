@@ -1,0 +1,69 @@
+|-- Cloud-Native-Multicloud-Enabling-Cross-Cloud-Application-Management
+    |-- setup.md
+    |-- architecture.md
+    |-- implementation.md
+    |-- testing.md
+    |-- LICENSE
+    |-- README.md
+    |-- .gitignore
+    |-- .travis.yml
+    |-- cloud-scripts
+        |-- aws
+            |-- setup.sh
+            |-- teardown.sh
+        |-- azure
+            |-- setup.sh
+            |-- teardown.sh
+        |-- google-cloud
+            |-- setup.sh
+            |-- teardown.sh
+    |-- code
+        |-- app-services
+            |-- service1
+            |-- service2
+        |-- multicloud-controller
+        |-- multicloud-api
+    |-- test
+        |-- unit-tests
+        |-- integration-tests
+
+
+setup.md contains instructions for setting up the necessary cloud resources
+architecture.md contains a high-level overview of the solution's design
+implementation.md contains instructions for implementing the solution
+testing.md contains instructions for testing the solution
+LICENSE contains the project's license information
+README.md contains the project's documentation
+.gitignore contains a list of files and directories that should be ignored by git
+.travis.yml is a configuration file for Travis CI, a continuous integration service.
+cloud-scripts contains scripts for setting up and tearing down resources on each cloud provider
+code contains the source code for the application services and multicloud-controller and multicloud-api
+test contains unit and integration tests for the solution
+
+
+
+
+
+
+
+
+
+
+Linux_trick
+mkdir Cloud-Native-Multicloud-Enabling-Cross-Cloud-Application-Management
+cd Cloud-Native-Multicloud-Enabling-Cross-Cloud-Application-Management
+touch setup.md architecture.md implementation.md testing.md LICENSE README.md .gitignore .travis.yml
+mkdir cloud-scripts
+cd cloud-scripts
+mkdir aws azure google-cloud
+touch aws/setup.sh aws/teardown.sh azure/setup.sh azure/teardown.sh google-cloud/setup.sh google-cloud/teardown.sh
+cd ..
+mkdir code
+cd code
+mkdir app-services multicloud-controller multicloud-api
+cd app-services
+mkdir service1 service2
+cd ../..
+mkdir test
+cd test
+mkdir unit-tests integration-tests
